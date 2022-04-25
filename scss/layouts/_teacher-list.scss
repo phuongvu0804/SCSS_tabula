@@ -4,11 +4,13 @@
     background-color: $light-purple-color;
 
     .container {
-        position: relative;
         z-index: 1;
 
         .row {
             margin: 40px 0;
+            position: relative;
+            z-index: 4;
+            
             &:first-of-type {
                 padding-top: $pd-4;
             }

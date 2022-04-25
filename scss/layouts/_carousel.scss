@@ -1,22 +1,27 @@
-#carousel .row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    .carousel__content {
-        animation: appearFromLeft 0.5s ease;
-        .carousel-content__title {
-            @include text-style (18px, $fw-2, $main-color)
+#carousel {
+    position: relative;
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+
+        .carousel__content {
+            animation: appearFromLeft 0.5s ease;
+            .carousel-content__title {
+                @include text-style (18px, $fw-2, $main-color)
+            }
+            .carousel-content__text {
+                @include text-style (56px, 700, $text-color)
+
+            }
         }
-        .carousel-content__text {
-            @include text-style (56px, 700, $text-color)
+
+        .carousel__img {
+            animation: appearFromLeft 0.5s 0.3s ease;
 
         }
-    }
-
-    .carousel__img {
-        animation: appearFromLeft 0.5s 0.3s ease;
-
     }
 }
 

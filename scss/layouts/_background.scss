@@ -1,5 +1,4 @@
-.main > .bg-wrapper {
-    position: absolute;
+#carousel {
 
     .bg__top img{
         width: 1900px;
@@ -8,9 +7,11 @@
     .bg__top {
         img {
             &:first-of-type {
+                position: absolute;
+                top: 0;
                 width: 100vw;
                 object-fit: cover;
-                object-position: center;
+                object-position: center; 
             }
 
         }
@@ -21,7 +22,7 @@
         img {
             &:last-of-type {
                 position: absolute;
-                top: 80%;
+                bottom: 0;
                 width: 100vw;
                 object-fit: cover;
                 object-position: center;
@@ -32,10 +33,24 @@
 
 
 #teacher .bg-wrapper {
-    position: absolute;
-    bottom: 0;
     img {
         width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+#course {
+    .bg-wrapper{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+    }
+
+    img {
+        height: auto;
+        width: 100%;
     }
 }
 
